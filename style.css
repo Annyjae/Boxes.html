@@ -5,43 +5,43 @@
 }
 
 body{
-    background: rgb(11, 11, 17);
-    margin: 100px;
+    background-color: rgb(36, 34, 34);
 }
 
-main{
-    display: grid;
-    grid-template-areas: 
-        "a a b"
-        "c d d"
-        "c e e";
-    gap: 20px;
-}
+    main {
+        display: grid;
+        grid-template-columns: 45% auto 40%;
+        grid-template-rows: 40% auto 30%;
+        gap: 10px;
+        background-color: transparent;
+        padding: 10px;
+        width: 700px;
+        height: 450px;
+        margin: 100px auto;
+      }
 
-main div{
-    padding: 80px;
-}
+      main > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      .box1{
+          grid-column: 1 / span 2;
+          background-color: orangered;
+      }
 
-.box1{
-    grid-area: a;
-    background: orange;
-}
-.box2{
-    grid-area: b;
-    background:yellow;
-}
-.box3{
-    grid-area: c;
-    background: green;
-}
-.box4{
-    grid-area: d;
-    background: rgb(18, 136, 214);
-}
-.box5{
-    grid-area: e;
-    background: rgb(18, 136, 214);
-}
-a{
-    color: white;
-}
+      .box2{
+          background-color: orange;
+      }
+
+      .box3{
+          grid-row: 2 / span 2;
+          background-color: green;
+      }
+      .box4, .box5{
+        grid-column: 2 / span 2;
+        background-color: blue;
+      }
+
+      
